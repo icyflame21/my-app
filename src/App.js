@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { LandingPage } from "./Components/LandingPage";
+import "./App.css";
+import { Mystery_Page } from "./Components/Mystery";
+import { Mythology_page } from "./Components/Mythology";
+import { Technology_Page } from "./Components/Technology";
+import {History_Page} from "./Components/History";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+       <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/mystery" element={<Mystery_Page />} />
+        <Route path="/mythology" element={<Mythology_page />} />
+        <Route path="/technology" element={<Technology_Page />} />
+        <Route path="/history" element={<History_Page />} />
+      </Routes>
+   </>
   );
 }
 

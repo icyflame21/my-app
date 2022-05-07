@@ -1,0 +1,91 @@
+.navbar{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+
+}
+.container_card {
+  margin-top: 100px !important;
+  margin: 0 100px;
+  max-width: 1400px;
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.food_card {
+  max-width: 300px;
+  max-height: 400px;
+  padding: 10px 10px 20px 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.food_image {
+  width: 100%;
+  object-fit: cover;
+}
+.food_details {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 12.5px;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 15px;
+  transform: all 1s ease-in-out;
+}
+.Header_card {
+  font-weight: 500;
+  font-size: 16.8px;
+  margin-top: 15px;
+}
+.para_card {
+  font-weight: 400;
+
+  font-size: 14px;
+  word-break: break-word;
+  line-height: 1.3rem;
+}
+.footer {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: rgb(123, 58, 58);
+}
+.food_card:hover {
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.discount_icon {
+  width: 20px;
+  margin-right: 10px;
+}
+.food_details:hover {
+  color: #fc8019;
+}
+.rating {
+  padding: 3.5px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 700;
+}
+.promoted {
+  background-color: rgb(58, 60, 65);
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 3px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  top: 11px;
+}
+
+.star_img{
+  width: 16px;
+  object-fit: contain;
+  margin-right: 3px;
+}
